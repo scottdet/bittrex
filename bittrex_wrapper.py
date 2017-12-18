@@ -63,6 +63,6 @@ class bittrex(object):
     def get_openorders_bittrex(self, market):
         return self.query('getopenorders', {'market': market})
 
-   # get balances for specific currency pair 
+    # get balances for specific currency pair 
     def get_balance_bittrex(self, currency):
         return self.query('getbalance', {'currency': currency})
